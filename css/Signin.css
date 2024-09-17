@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", Times, serif;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.kiri {
+  width: 60%;
+  height: 100%;
+  background-image: url("avnger.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(43, 21, 107, 0.8);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.kiri img {
+  width: 500px;
+  height: 190px;
+  background-size: cover;
+}
+
+.kiri p {
+  width: 408px;
+  height: 58px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58.09px;
+  color: #ddd;
+  font-family: "inter";
+}
+
+.kanan {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.input {
+  height: 80vh;
+  width: ;
+  gap: 1%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7%;
+}
+
+#kataSign {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  font-family: 'Inter';
+}
+
+#sign2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  letter-spacing: 0.007em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Inter';
+  color: rgba(170, 170, 170, 1);
+}
+
+#label {
+  font-family: 'Mulish';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+  text-align: left;
+}
+
+#email {
+  width: 400px;
+  height: 64px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+#pass {
+  width: 400px;
+  height: 64px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+#btn {
+  width: 400px;
+  height: 64px;
+  background-color: rgba(95, 46, 234, 1);
+  border-radius: 15px;
+  color: rgba(247, 247, 252, 1);
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+
+.rest {
+  width: 100%;
+  gap: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rest2 {
+  width: 80%;
+  gap: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+  }
+
+  .kiri {
+    display: none;
+  }
+
+  .kanan {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
